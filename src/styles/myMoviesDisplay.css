@@ -1,0 +1,155 @@
+.movie-display-container {
+    width: 45%;
+    background: radial-gradient(circle at 24.1% 68.8%, rgb(50, 50, 50) 0%, rgb(0, 0, 0) 99.4%);
+    border-radius: 10px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    
+    
+}
+
+.movie-display-container-content {
+    border: 2px solid white;
+    border-radius: 10px;
+    overflow: scroll;
+    height: 68vh;
+}
+
+.minimize-display-container-my {
+   width: 100%;
+   display: flex;
+   justify-content: flex-end;
+}
+
+.minimize-display-container-my span {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgb(117, 111, 111);
+    color: white;
+    font-size: 1.3rem;
+    padding-bottom: 5px;
+    margin: 5px 10px 0 0;
+    cursor: pointer;
+}
+
+.info-content {
+    display: flex;
+}
+
+.info-content p {
+    margin: 10px;
+    color: white
+}
+
+.info-content span {
+    margin-right: 5px;
+}
+
+.my-movies-info {
+    background-color: rgb(63, 60, 60);
+    border-radius: 10px;
+    width:100%;
+}
+
+.my-movies-info h3 {
+    color: white;
+    margin-left: 10px;
+    margin-bottom: 5px;
+}
+
+.selected-movie-title {
+    display: flex;
+    justify-content: center;
+    margin: 20px auto 0 auto;
+    font-size: 1.5rem;
+    color: white;
+    border-bottom: 2px solid white;
+    width: 90%;
+    padding-bottom: 10px;
+}
+
+.selected-movie-image {
+    width: 90%;
+    height: 50vh;
+    display: flex;
+    margin: 0 auto;
+    margin-top: 20px;
+    border-radius: 10px;
+    border: 2px solid white;
+
+}
+
+.summary-container {
+    width: 90%;
+    display: flex;
+    margin: 30px auto 0 auto;
+}
+
+.summary-container p {
+    color: white;
+    font-size: 0.9rem;
+}
+
+.movie-genres {
+    display: flex;
+    margin: 10px auto 0 auto;
+    width: 90%;
+}
+
+.movie-genres p {
+    color: white;
+    margin-left: 20px;
+}
+
+.movie-genres ul {
+    display: flex;
+    margin: 30px auto 0 auto;
+    justify-content: center;
+    
+}
+
+.movie-genres ul li {
+    margin-left: 5px;
+    margin-right: 5px;
+    list-style-type: none;
+    display: flex;
+    color: white;
+}
+.movie-display-enter {
+    transform: scaleY(0);
+    transform-origin: top;
+  }
+  .movie-display-enter-active {
+    transform: scaleY(1);
+    transition: transform 300ms ease-in-out; 
+    transform-origin: top;
+  }
+  .movie-display-exit {
+    transform: scaleY(1);
+    transform-origin: top;
+  }
+  .movie-display-exit-active {
+    transform: scaleY(0);
+    transition: transform 300ms ease-in-out; 
+    transform-origin: top;
+  }
+  
+
+
+@media screen and (max-width: 600px) {
+    .movie-display-container {
+        width: 95%;
+        height: 40vh;
+        margin: 10px auto;
+      }
+
+      .movie-display-container-content {
+        overflow: scroll;
+        height: 45vh;
+      }
+  }

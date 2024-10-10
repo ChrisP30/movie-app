@@ -1,0 +1,65 @@
+.search-display-container {
+  background: radial-gradient(circle at 24.1% 68.8%, rgb(50, 50, 50) 0%, rgb(0, 0, 0) 99.4%);
+    width: 45%;
+    border-radius: 10px;
+    overflow: scroll;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.search-display-container-content {
+  border: 2px solid white;
+  border-radius: 10px;
+}
+
+.minimize-display-container {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    border-bottom: 1px solid black;
+    height: 30px;
+ }
+ 
+ .minimize-display-container span {
+     width: 20px;
+     height: 20px;
+     border-radius: 50%;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     border: 1px solid rgb(117, 111, 111);
+     color: white;
+     font-size: 1.3rem;
+     padding-bottom: 5px;
+     margin: 5px 10px 0 0;
+     cursor: pointer;
+ }
+
+ .movie-display-enter {
+  transform: scaleY(0);
+  transform-origin: top;
+}
+.movie-display-enter-active {
+  transform: scaleY(1);
+  transition: transform 200ms ease-in-out; 
+  transform-origin: top;
+}
+.movie-display-exit {
+  transform: scaleY(1);
+  transform-origin: top;
+}
+.movie-display-exit-active {
+  transform: scaleY(0);
+  transition: transform 200ms ease-in-out; 
+  transform-origin: top;
+}
+
+@media screen and (max-width: 600px) {
+    .search-display-container {
+      width: 95%;
+      height: 60vh;
+      margin: 10px auto;
+      overflow: scroll;
+    }
+  }
